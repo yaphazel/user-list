@@ -1,0 +1,25 @@
+$primary: #D099E2;
+$secondary: #522192;
+$white : #FFFFFF;
+$body-bg: #DCD0FF;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+*{
+  font-family: 'Noto Serif', serif;
+}
+input{
+  width: 300px;
+}
+.search-content{
+  background-color: $white;
+}
+.tab-content{
+  display:none;
+}
+.active-content{
+  display:block;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+}
