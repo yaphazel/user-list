@@ -2,8 +2,10 @@ import React, { useContext } from 'react';
 import { SearchContext } from './Search';
 const  List  = ({data}) => {
     const searchTerm = useContext(SearchContext)
+    console.log(searchTerm)
     return (
-        <div>
+        <div className="card-group container justify-content-center">
+            <div className="row row-cols-xxl-3">
             {data.filter((val) => {
                 if(searchTerm === ""){
                     return val
@@ -13,18 +15,22 @@ const  List  = ({data}) => {
 
             }).map((val) => {
                 return( 
-                    <div key={val.name} className="data card m-2 col-5" >
-                        <div className='image-container'>
-                        <img src="" alt="" height="100px" width="100px" />
+                    <div className="col">
+                        <div key={val.name} className="data card" >
+                            <div className='image-container'>
+                                <img src={val.img} alt="" height="120px" width="120px" />
+                            </div>
+                            <div className="card-body">
+                                <h4 className="name card-title">{val.name}</h4>  
+                                <p className="origin card-info">{val.origin}</p> 
+                            </div>    
                         </div>
-                        <div className="card-body">
-                            <h5 className="name card-title">{val.name}</h5>  
-                            <p className="origin">{val.origin}</p> 
-                        </div>    
                     </div>
                     
                     );
             })}
+        
+            </div>
         </div>
     );
 };

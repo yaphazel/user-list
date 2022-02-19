@@ -33,6 +33,6 @@ export default[
         id:6,
         name: 'Alem Lema Ezkeiel',
         origin: 'Addis Ababa, ETH',
-        img:'https://media.istockphoto.com/photos/portrait-of-a-smiling-young-woman-picture-id905456806?k=20&m=905456806&s=612x612&w=0&h=7cS6UmS6XRBKkbteYZDRk9JIFkFEcUoxgSMlWQlg5ws='
+        img:'https://media.istockphoto.com/photos/thoughtful-male-ceo-standing-with-hands-in-pockets-picture-id1296271199?k=20&m=1296271199&s=612x612&w=0&h=XxqpTPZkIosnE9IZmiJZqRo_ddtzYHdRoX3OzakB2cY='
     }
 ]

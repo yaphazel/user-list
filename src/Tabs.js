@@ -4,14 +4,15 @@ import data2 from './data-editor';
 import data3 from './data-writer';
 import List from './List';
 
+
 const Tabs = () => {
     const [tabToggle, setToggle] = useState(1);
     const changeToggle = (index) => {
         setToggle(index)
     }
     return (
-        <div className='tabs-container'>
-            <ul className="tabs nav nav-tabs my-4">
+        <div className='tabs-container "'>
+            <ul className="nav nav-tabs mb-3 mt-4 justify-content-end">
                 <li className={tabToggle === 1 ? "nav-item bg-primary" : "nav-item"}>
                     <div className={tabToggle === 1 ? "tab active-tab nav-link text-light" : "tab nav-link"} onClick={() => {changeToggle(1)}}>Artist</div>
                 </li>
@@ -22,6 +23,7 @@ const Tabs = () => {
                     <div className={tabToggle === 3 ? "tab active-tab nav-link text-light" : "tab nav-link"} onClick={() => {changeToggle(3)}}>Writer</div>
                 </li>
             </ul>
+
             <div className="tabs-content">
                 <div className={tabToggle === 1 ? "tab-content active-content" : "tab-content"}>
                     <List data={data1}/>

@@ -1,25 +1,66 @@
 $primary: #D099E2;
 $secondary: #522192;
 $white : #FFFFFF;
-$body-bg: #DCD0FF;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../node_modules/bootstrap/scss/bootstrap-utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *{
   font-family: 'Noto Serif', serif;
 }
 input{
   width: 300px;
 }
-.search-content{
-  background-color: $white;
-}
+
 .tab-content{
   display:none;
 }
 .active-content{
   display:block;
 }
-.card{
-  display: flex;
-  flex-direction: row;
+.Container{
+  border: 1px #DCD0FF solid;
+  border-radius: 25px;
+  margin:auto;
+  box-shadow: -1px 9px 40px -12px #DCD0FF;
 }
+
+.card{
+  width: 300px;
+  height:200px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+}
+.card:hover{
+  border: 1px #DCD0FF solid;
+  border-radius: 5%;
+  box-shadow: -1px 9px 40px -12px #DCD0FF;
+}
+.title{
+  font-size:30px;
+  font-weight: 400;
+}
+
+img{
+  border-radius: 50%;
+}
+
+.nav{
+  border:none;
+}
+
